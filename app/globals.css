@@ -6,6 +6,8 @@
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
+  scroll-behavior: smooth;
+
 }
 
 @media (prefers-color-scheme: dark) {
@@ -19,27 +21,66 @@
 body {
   color: black;
   background: white;
+  scroll-behavior: smooth;
 }
 
-a{
+a {
   padding: 1rem;
 }
 
 
-.section{
-  height: calc(100vh - 30px);
-  width: calc(100vw - 30px);
-  display: flex;
-  background: url('https://media.istockphoto.com/id/1316810209/fr/vectoriel/carte-de-ville-monochrome-de-paris-france-plan-des-rues-fond-urbain-sch%C3%A9ma-vectoriel-avec.jpg?s=1024x1024&w=is&k=20&c=Gkc676tqcsBmegsspNGn_hg3xpzge4iNFYznHxGfRcE=');
-  justify-content: center;
-  align-items: center;
-  background-size: cover;
-  background-position: center;
+
+.section {
   margin: 15px;
   border-radius: 5px;
 }
 
-.section2{
+
+.hero {
+  height: calc(100vh - 30px);
+  width: calc(100vw - 30px);
+  display: flex;
+  padding: 150px 10vw;
+  background-position: center;
+  background-size: cover;
+  align-items: center;
+  background-size: 100% 100%;
+  background-image: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url('https://matabeille.s3.eu-west-1.amazonaws.com/156625439+(1)/Logo+Files/For+Web/png/fond+paris+gris+format+M.jpg');
+
+  /* animation: zoomIn 10s infinite alternate ease; */
+}
+
+
+@keyframes zoomIn {
+  0% {
+    background-size: 100% 100%;
+    background-image: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url('https://matabeille.s3.eu-west-1.amazonaws.com/156625439+(1)/Logo+Files/For+Web/png/fond+paris+gris+format+M.jpg');
+
+  }
+  25% {
+    background-size: 107.5% 107.5%;
+    background-image: linear-gradient(rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.4)), url('https://matabeille.s3.eu-west-1.amazonaws.com/156625439+(1)/Logo+Files/For+Web/png/fond+paris+gris+format+M.jpg');
+
+  }
+  50% {
+    background-size: 115% 115%;
+    background-image: linear-gradient(rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.4)), url('https://matabeille.s3.eu-west-1.amazonaws.com/156625439+(1)/Logo+Files/For+Web/png/fond+paris+gris+format+M.jpg');
+
+  }
+  75% {
+    background-size: 122.5% 122.5%;
+    background-image: linear-gradient(rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.3)), url('https://matabeille.s3.eu-west-1.amazonaws.com/156625439+(1)/Logo+Files/For+Web/png/fond+paris+gris+format+M.jpg');
+
+  }
+  100% {
+    background-size: 130% 130%;
+    background-image: linear-gradient(rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2)), url('https://matabeille.s3.eu-west-1.amazonaws.com/156625439+(1)/Logo+Files/For+Web/png/fond+paris+gris+format+M.jpg');
+
+  }
+}
+
+
+.section2 {
   height: calc(100vh - 30px);
   width: calc(100vw - 30px);
   display: flex;
@@ -52,7 +93,7 @@ a{
   border-radius: 5px;
 }
 
-.nav{
+.nav {
   position: fixed;
   display: flex;
   width: 100%;
@@ -67,25 +108,25 @@ a{
   left: 0;
 }
 
-.navScrolled{
+.navScrolled {
   background: white;
   height: 100px;
 
 }
-.navMenu{
+
+.navMenu {
   display: flex;
   justify-content: center;
   align-items: center;
   visibility: hidden;
-
 }
 
-.navLogo{
+.navLogo {
   min-width: 270px;
 }
 
 
-.navLogoImg{
+.navLogoImg {
   height: 35px;
   margin-left: 10px;
 }
@@ -93,11 +134,11 @@ a{
 .navBtn {
   color: #000000;
   border: 1px solid #000000;
-  padding: 8px 24px;
+  padding: 8px 18px;
   border-radius: 5px;
   font-weight: lighter;
   opacity: 0.6;
-  transition: opacity 0.3s ease;
+  transition: 0.3s ease;
   cursor: pointer;
   font-weight: 400;
   visibility: hidden;
@@ -105,10 +146,15 @@ a{
 
 .navBtn:hover {
   opacity: 1;
+  background: #14bb14;
+  color: aliceblue;
+  padding: 8px 18px;
+  border: 1px solid #14bb14;
+
 }
 
 
-.navBurger{
+.navBurger {
   position: fixed;
   top: 45px;
   right: 40px;
@@ -117,7 +163,7 @@ a{
   border-radius: 5px;
 }
 
-.navBurger:hover{
+.navBurger:hover {
   position: fixed;
   top: 45px;
   right: 40px;
@@ -136,7 +182,7 @@ a{
   transition: 300ms ease;
 }
 
-.footer{
+.footer {
   width: calc(100vw - 30px);
   height: 250px;
   display: flex;
@@ -150,43 +196,17 @@ a{
   opacity: 0.95;
 }
 
-@media (min-width: 800px) { 
-  .navLogoImg{
-    height: 50px;
-  }
-}
 
-@media (min-width: 1210px) { 
-  .navBurger{
-    visibility: hidden;
-  }
-
-  .navBurgerScrolled{
-    visibility: hidden;
-  }
-
-  .navMenu{
-    visibility: inherit;
-  }
-
-  .navBtn{
-    visibility: inherit;
-  }
-  .navLogoImg{
-    height: 60px;
-  }
- }
-
- .progressBullet{
+.progressBullet {
   height: 15px;
   width: 15px;
   background: white;
   border-radius: 50%;
   transition: 300ms ease;
   margin: 10px;
- }
+}
 
- .progressBulletActive{
+.progressBulletActive {
   height: 15px;
   width: 15px;
   transition: 300ms ease;
@@ -194,18 +214,223 @@ a{
   border: 1px white solid;
   border-radius: 50%;
   margin: 10px;
- }
+}
 
- .sideMenu{
+.sideMenu {
   display: flex;
   justify-content: space-around;
   align-items: center;
   flex-direction: column;
   min-height: 50vh;
   margin-top: 5vh;
- }
+}
 
- .imageMenu{
+.imageMenu {
   height: 35vh;
   border-radius: 5px;
+}
+
+
+
+h1 {
+  margin: 0;
+  color: black;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+  font-size: 28.83px;
+  font-weight: 400;
+}
+
+p {
+  font-size: 16px;
+}
+
+a {
+  font-size: 16px;
+}
+
+.sectionSplit{
+  width: calc(100vw - 30px);
+  display: flex;
+  flex-direction: column;
+
+}
+
+h2{
+  font-weight: 600;
+  font-size: 20.25px;
+}
+
+
+.sectionSplit{
+  width: calc(100vw - 30px);
+  display: flex;
+  flex-direction: column;
+  padding-top: 1rem;
+}
+
+.sectionSplitReverse{
+  width: calc(100vw - 30px);
+  display: flex;
+  flex-direction: column;
+  padding-top: 1rem;
+}
+
+
+.splitImg{
+  width: 100%;
+  height: calc(70vh - 130px);
+  border-radius: 5px;
+  background-position: 20% 20%!important;
+  background-size: cover !important;
+}
+
+.splitText{
+  margin-top: 15px;
+  width: 100%;
+  min-height: calc(50vh - 130px);
+  border-radius: 5px;
+  background-color: #F4F4F4;
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+}
+
+h2{
+  padding-bottom: 1rem;
+}
+
+h3{
+  font-weight: 800;
+}
+
+ p{
+  padding-top: 1rem;
  }
+
+ li{
+  padding-top: 1rem;
+ }
+
+.sectionServices{
+  background: black;
+  color: white;
+  min-height: calc(100vh - 130px);
+  width: calc(100vw - 30px);
+  padding: 2rem;
+}
+
+.servicesText{
+  min-height: calc(60vh - 130px);
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  margin-top: 4rem;
+}
+
+@media (min-width: 800px) {
+  .navLogoImg {
+    height: 50px;
+  }
+
+  .sectionServices{
+    display: flex;
+  }
+
+  .servicesText{
+    width: 50%;
+  }
+
+  h1 {
+    font-size: 36.49px;
+  }
+
+  .hero {
+    padding: 150px 5vw;
+
+  }
+  .sectionSplit{
+    flex-direction: row;
+  }
+
+  .sectionSplit .splitImg{
+    width: 49%;
+    min-height: calc( 100vh - 130px );
+    margin-right: 1%;
+  }
+
+  .sectionSplit .splitText{
+    width: 49%;
+    min-height: calc( 100vh - 130px );
+    margin-left: 1%;
+    margin-top: 0px;
+  }
+
+  .sectionSplitReverse{
+    flex-direction: row-reverse;
+  }
+  .sectionSplitReverse .splitImg{
+    width: 49%;
+    min-height: calc( 100vh - 130px );
+    margin-left: 1%;
+  }
+
+  .sectionSplitReverse .splitText{
+    width: 49%;
+    min-height: calc( 100vh - 130px );
+    margin-right: 1%;
+    margin-top: 0px;
+  }
+
+  .splitText p{
+   padding-top: 1rem;
+   font-size: 12px;
+  }
+
+}
+
+@media (min-width: 1210px) {
+  .navBurger {
+    visibility: hidden;
+  }
+
+  .navBurgerScrolled {
+    visibility: hidden;
+  }
+
+  .navMenu {
+    visibility: inherit;
+    width: 30vw;
+    display: flex;
+    justify-content: space-around;
+    transition: 300ms ease;
+    color: rgb(86, 86, 86);
+
+  }
+
+  .navMenu :hover {
+    color: rgb(0, 0, 0);
+    transition: 300ms ease;
+    font-weight: 500;
+  }
+
+  .navBtn {
+    visibility: inherit;
+  }
+
+  .navLogoImg {
+    height: 60px;
+  }
+
+  h1 {
+    font-size: 41.05px;
+  }
+  .splitText{
+    padding: 1.85rem;
+    justify-content: center;
+  }
+
+  .splitText p{
+    padding-top: 1rem;
+    font-size: 16px;
+   }
+}

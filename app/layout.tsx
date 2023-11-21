@@ -7,7 +7,7 @@ const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
   title: 'Baltasar',
-  description: 'Alexis et Geoffroy vous sucent pour un snicker',
+  description: 'Conseil en affaires publiques et communication stratégique',
 }
 
 export default function RootLayout({
@@ -18,12 +18,11 @@ export default function RootLayout({
   return (
     <html lang="en">
       <Head>
-      <meta name='description' content='Alexis et Geoffroy vous sucent pour un snicker' />
+      <meta name='description' content='Conseil en affaires publiques et communication stratégique' />
       <meta property="og:title" content="Baltasar" key="title" />
-      <meta property="og:description" content="Alexis et Geoffroy vous sucent pour un snicker" key="title" />
+      <meta property="og:description" content="Conseil en affaires publiques et communication stratégique" key="title" />
       <meta property="og:url" content="www.baltasar.paris" key="title" />
-      <meta name='og:image' content='https://media.istockphoto.com/id/1316810209/fr/vectoriel/carte-de-ville-monochrome-de-paris-france-plan-des-rues-fond-urbain-sch%C3%A9ma-vectoriel-avec.jpg?s=1024x1024&w=is&k=20&c=Gkc676tqcsBmegsspNGn_hg3xpzge4iNFYznHxGfRcE=' />
-      {/* <link rel="icon" type="image/x-icon" href="https://matabeille.s3.eu-west-1.amazonaws.com/156625439+(1)/Logo+Files/For+Web/Favicons/iPhone.png" /> */}
+      <meta name='og:image' content='https://matabeille.s3.eu-west-1.amazonaws.com/156625439+(1)/Logo+Files/For+Web/png/fond+paris+gris+format+M.jpg' />
       </Head>
       <body className={inter.className}>{children}</body>
     </html>
