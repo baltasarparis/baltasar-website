@@ -58,14 +58,14 @@ export default function Home() {
         <Approche />
       </div>
       <div className="section pin sectionServices" id="services">
-        <h2>Métiers</h2>
         <Services />
       </div>
-      <div className="section pin sectionSplitReverse" id="equipe">
-        <Geoffroy />
-      </div>
-      <div className="section  sectionSplit" >
+
+      <div className="section  sectionSplitReverse" >
         <Alexis />
+      </div>
+      <div className="section pin sectionSplit" id="equipe">
+        <Geoffroy />
       </div>
       <SideSheet isShown={isShown} onCloseComplete={() => setIsShown(false)} width="80vw">
         <MenuSide />

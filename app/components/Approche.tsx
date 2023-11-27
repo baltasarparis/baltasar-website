@@ -3,7 +3,7 @@ import React from 'react';
 const Approche: React.FC = () => {
     return (
         <>
-            <div className="splitImg" style={{ background: `url('https://matabeille.s3.eu-west-1.amazonaws.com/156625439+(1)/Logo+Files/For+Web/png/WhatsApp+Image+2023-11-19+at+23.25.39.jpeg')` }}></div>
+            <div className="splitImg" style={{ background: `url('https://matabeille.s3.eu-west-1.amazonaws.com/156625439+(1)/Logo+Files/For+Web/png/Alexis+et+Geoffroy+debout+site.jpg')` }}></div>
             <div className="splitText">
                 <h2>Approche</h2>
                 <p>Baltasar est un cabinet de conseil en affaires publiques et en communication stratégique fondé en 2023 par Alexis Abeille et Geoffroy Daignes.</p>

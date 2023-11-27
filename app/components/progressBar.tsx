@@ -7,15 +7,31 @@ interface MyComponentProps {
 }
 
 const ProgressBar: React.FC<MyComponentProps> = (props) => {
-    const menu = ['accueil', 'approche', 'services', 'equipe']
+    const menu = [{
+        'key': 'accueil',
+        'label': 'Accueil'
+    },
+    {
+        'key': 'approche',
+        'label': 'Approche'
+    },
+    {
+        'key': 'services',
+        'label': 'Métiers'
+    },
+    {
+        'key': 'equipe',
+        'label': 'Equipe'
+    }
+    ]
     return (
         <div style={{ position: "fixed", top: '45%', left: 15 }}>
             {props.threshold.map((item, index) => {
                 return (
-                    <Tooltip content={
+                    <Tooltip key={index} content={
                         <div style={{ color: 'white' }}>
-                            <a href={'#' + menu[index]}>
-                                {menu[index]}
+                            <a href={'#' + menu[index].key}>
+                                {menu[index].label}
                             </a>
                         </div>} position="right">
                         <div key={index} className={(props.scroll > (item - 400)) ? 'progressBullet' : 'progressBulletActive'}>

@@ -1,4 +1,5 @@
 import React from 'react';
+import { FaLinkedin } from "react-icons/fa";
 
 const Geoffroy: React.FC = () => {
     return (
@@ -18,9 +19,10 @@ const Geoffroy: React.FC = () => {
                 <p>
                     Il contribue au débat public par des publications dans des revues (Le Débat - Gallimard) et dans la presse (Le Monde, Le Figaro, Libération…).
                 </p>
-                <p>
-                    <strong> Visitez son  Linkedin</strong>
-                </p>
+                <div style={{ display: 'flex', fontWeight: 'bold', marginTop: '30px' }}>
+                    <FaLinkedin size={23} style={{ marginRight: 8 }} />  <a href="https://www.linkedin.com/in/geoffroy-daignes-a26b4b60/" target="_blank">                    Visitez son  Linkedin
+                    </a>
+                </div>
 
             </div >
         </>

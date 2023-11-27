@@ -9,8 +9,6 @@ const Footer: React.FC = () => {
         className="navLogoImg"
       />
       <div style={{ textAlign: 'center' }}>
-        <p>100 rue ordener, 75018 Paris</p>
-        <p>+33 6 36 65 65 65</p>
         <p>contact@baltasar.paris</p>
       </div>
     </div>

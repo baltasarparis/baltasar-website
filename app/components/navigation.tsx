@@ -10,7 +10,7 @@ const Navigation: React.FC<MyComponentProps> = (props) => {
 
 
   return (
-    <div className={props.scroll > 200 ? 'nav navScrolled' : 'nav'}>
+    <div className={props.scroll > 150 ? 'nav navScrolled' : 'nav'}>
       <div className="navLogo">
         <img
           src="https://matabeille.s3.eu-west-1.amazonaws.com/156625439+(1)/Logo+Files/For+Web/png/Color+logo+-+no+background.png"
@@ -25,7 +25,7 @@ const Navigation: React.FC<MyComponentProps> = (props) => {
         {/* <a href="#">Publications</a> */}
       </div>
       <div className="navContact">
-        <a className="navBtn" href="mailto:gd@baltasar.paris">
+        <a className="navBtn" href="mailto:contact@baltasar.paris">
           Contactez-nous
         </a>
       </div>
