@@ -19,8 +19,8 @@ const Geoffroy: React.FC = () => {
                 <p>
                     Il contribue au débat public par des publications dans des revues (Le Débat - Gallimard) et dans la presse (Le Monde, Le Figaro, Libération…).
                 </p>
-                <div style={{ display: 'flex', fontWeight: 'bold', marginTop: '30px' }}>
-                    <FaLinkedin size={23} style={{ marginRight: 8 }} />  <a href="https://www.linkedin.com/in/geoffroy-daignes-a26b4b60/" target="_blank">                    Visitez son  Linkedin
+                <div style={{ display: 'flex', fontWeight: 'bold', position:"absolute", right: "20px", top: "20px" }}>
+                    <FaLinkedin size={25} />  <a href="https://www.linkedin.com/in/geoffroy-daignes-a26b4b60/" target="_blank">              
                     </a>
                 </div>
 
