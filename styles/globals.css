@@ -25,3 +25,77 @@ body {
 }
 
 
+/* Styles des titres */
+h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  color: #2c3e50; /* Couleur sombre élégante */
+}
+
+h2 {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-top: 1.75rem;
+  margin-bottom: 0.75rem;
+  color: #34495e;
+}
+
+h3 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-top: 1.5rem;
+  margin-bottom: 0.5rem;
+  color: #7f8c8d;
+}
+
+/* Style des paragraphes */
+p {
+  margin-bottom: 1.25rem;
+  line-height: 1.8;
+  color: #4d4d4d;
+}
+
+/* Styles des blockquotes */
+blockquote {
+  border-left: 4px solid #3498db; /* Barre verticale avec une couleur vive */
+  padding-left: 1rem;
+  margin-left: 0;
+  font-style: italic;
+  color: #2c3e50;
+  background-color: #f4f9fc; /* Couleur de fond douce */
+  padding: 1rem 1.5rem;
+  border-radius: 5px;
+  margin-bottom: 1.5rem;
+}
+
+/* Styles pour les listes */
+ul, ol {
+  margin-left: 2rem;
+  margin-bottom: 1.5rem;
+  color: #4d4d4d;
+}
+
+ul li::marker, ol li::marker {
+  color: #3498db; /* Couleur des puces ou des numéros */
+}
+
+/* Styles pour les images */
+img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 1.5rem;
+  border-radius: 8px;
+}
+
+/* Styles pour le code */
+pre {
+  background-color: #2d2d2d;
+  color: #f8f8f2;
+  padding: 1rem;
+  border-radius: 8px;
+  overflow-x: auto;
+  font-family: 'Courier New', Courier, monospace;
+  margin-bottom: 1.5rem;
+}

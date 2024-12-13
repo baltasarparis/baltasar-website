@@ -84,14 +84,15 @@ export default function Home({ allArticlesData }) {
 }
 
 export async function getStaticProps({ locale }) {
-  const allArticlesData = getSortedArticlesData();
+  const allArticlesData = getSortedArticlesData().map(article => ({
+    ...article,
+    date: article.date ? new Date(article.date).toISOString() : null, // Conversion sécurisée des dates
+  }));
 
   return {
     props: {
       allArticlesData,
-      ...(await serverSideTranslations(locale, [
-        'common'
-      ]))
+      ...(await serverSideTranslations(locale, ['common'])), // Ajout des traductions
     },
   };
 }

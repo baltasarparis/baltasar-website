@@ -21,7 +21,7 @@ export default function Article({ articleData }) {
         <Title text={articleData.title} />
         <p>{articleData.date}</p>
 
-        <div className='my-12'>
+        <div className="my-12">
           <div dangerouslySetInnerHTML={{ __html: articleData.contentHtml }} />
         </div>
         <div className='my-12'>
@@ -58,12 +58,18 @@ export async function getStaticPaths() {
 export async function getStaticProps({ params, locale }) {
   const articleData = await getArticleData(params.id);  // Fetch the article by ID
 
+  // Validate and convert the date if needed
+  const serializedArticleData = {
+    ...articleData,
+    date: articleData.date ? new Date(articleData.date).toISOString() : null, // Ensure the date is serialized
+  };
+
   return {
     props: {
-      articleData,
+      articleData: serializedArticleData,
       ...(await serverSideTranslations(locale, [
         'common'
-      ]))
+      ])),
     },
   };
 }
