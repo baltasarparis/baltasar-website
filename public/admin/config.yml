@@ -1,22 +1,28 @@
 backend:
   name: git-gateway
   branch: main # Branch to update (optional; defaults to master)
-media_folder: public/img
-public_folder: img
+
+design:
+  preview: true
+
+media_folder: "public/assets/images" # Chemin où les images seront stockées dans ton projet.
+public_folder: "/assets/images" # Chemin public pour accéder aux images.
+
 collections:
-  - name: "pages"
-    label: "Pages"
-    files:
-    - label: "Home"
-      name: "home"
-      file: "content/home.md"
-      fields:
-        - { label: "Title", name: "title", widget: "string"}
-        - { label: "Publish Date", name: "date", widget: "datetime" }
-        - { label: "Body", name: "body", widget: "markdown"}
-        - label: 'Cats'
-          name: "cats"
-          widget: list
-          fields:
-            - { label: "Name", name: "name", widget: "string"}
-            - { label: "Description", name: "description", widget: "text"}
+  - name: "articles" # Identifiant unique pour la collection.
+    label: "Articles" # Libellé affiché dans l'interface du CMS.
+    folder: "articles" # Chemin du dossier contenant les articles.
+    create: true # Permet la création de nouveaux fichiers.
+    slug: "{{slug}}" # Génère un slug basé sur le titre.
+    fields:
+      - { label: "Titre", name: "title", widget: "string" } # Titre de l'article.
+      - { label: "Date", name: "date", widget: "datetime" } # Date de publication.
+      - { label: "Auteur", name: "author", widget: "string" } # Auteur de l'article.
+      - { label: "Type", name: "type", widget: "string" } # Auteur de l'article.
+      - { label: "Extrait", name: "preview", widget: "text" } # Extrait de l'article.
+      - { label: "Image", name: "image", widget: "image" } # Image principale de l'article.
+      - { label: "Contenu", name: "body", widget: "markdown" } # Contenu principal en Markdown.
+
+slug:
+  encoding: "ascii"
+  clean_accents: true
