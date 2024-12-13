@@ -1,0 +1,62 @@
+{
+  "title": "Baltasar",
+  "description": "Public affairs and strategic communication consulting",
+  "menu": {
+    "home": "Home",
+    "studies": "Our Services",
+    "team": "Our Team",
+    "contact": "Contact",
+    "language": "FR"
+  },
+  "approach": {
+    "title": "Approach",
+    "description": "Baltasar is a public affairs and strategic communication consulting firm founded in 2023 by Alexis Abeille and Geoffroy Daignes. \n We have in-depth knowledge of our clients' sectors — healthcare, tech, industry, commerce, professional training, transport, energy — and we apply our expertise to help them achieve their ambitions. \n We offer methodical and precise support: we assist our clients in building their strategic roadmap, and then we oversee its operational execution by producing the right content or ensuring the right connections are made. \n We know how to work collectively, and for that, we are surrounded by a network of high-level partners — journalists, researchers, lawyers, designers, e-influence experts — to always be solution providers. \n We place particular importance on writing and clarifying our clients' technical issues and complex messages, as this is, for us, the core of successful consulting."
+  },
+  "alexis": {
+    "name": "Alexis Abeille",
+    "description": "Alexis Abeille has nearly 10 years of experience supporting companies, foundations, federations, and executives.\nHe has worked for major communication groups and also served as director at the Pierre Deniker Foundation, located at the Sainte-Anne Hospital in Paris, which aims to support psychiatric research and raise public awareness of mental health issues.\nCommitted to informing young people about mental health challenges, he is also an avid reader of novels and occasionally contributes with Geoffroy Daignes (notably for the journal Le Débat) to public debates.\nHe is a graduate of Sciences Po Paris (2012) and ESCP Europe (2015)."
+  },
+  "geoffroy": {
+    "name": "Geoffroy Daignes",
+    "description": "Geoffroy Daignes advises large companies, federations, start-ups, associations, and their leaders for over 10 years.\nHe began his career by developing a start-up in the education and professional training sector for three years. He then worked for major communication groups (Publicis / Havas) and in public affairs consulting firms (Batout Guilbaud / Pergamon).\nThroughout this journey, he specialized in the healthcare, digital, education, and energy sectors.\nHe contributes to the public debate through publications in journals (Le Débat - Gallimard) and in the press (Le Monde, Le Figaro, Libération…)."
+  },
+  "services": {
+    "title": "Services",
+    "publicAffairs": "Public Affairs Consulting",
+    "publicAffairsDescription": "Public affairs consulting: we help companies make their legitimate interests heard by public decision-makers.",
+    "strategicRoadmap": "Strategic roadmap",
+    "technicalBriefs": "Technical briefs and position papers",
+    "legislativeMonitoring": "Legislative and regulatory monitoring",
+    "meetingPreparation": "Meeting preparation",
+    "awarenessEvents": "Awareness events",
+    "strategicCommunication": "Strategic Communication Consulting",
+    "strategicCommunicationDescription": "Strategic communication consulting: we assist companies and decision-makers in crafting and disseminating their narratives.",
+    "corporateCommunication": "Corporate communication strategy",
+    "leadershipInterventions": "Leadership interventions and thought leadership",
+    "crisisCommunication": "Crisis communication",
+    "internalCommunication": "Internal communication",
+    "pressMonitoring": "Press and social media monitoring"
+  },
+  "progressBar": {
+    "home": "Home",
+    "approach": "Approach",
+    "services": "Services",
+    "team": "Team"
+  },
+  "ogTitle": "Baltasar",
+  "ogDescription": "Public affairs and strategic communication consulting",
+  "backToHome": "Back to home",
+  "newsletter": {
+    "title": "Subscribe to our Newsletter",
+    "subtitle": "Stay updated with the latest news.",
+    "placeholder": "Enter your email",
+    "button": {
+      "default": "Subscribe",
+      "submitting": "Submitting..."
+    },
+    "success": {
+      "title": "Thank you!",
+      "message": "You've successfully subscribed to our newsletter."
+    }
+  }
+}

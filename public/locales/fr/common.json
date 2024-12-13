@@ -1,0 +1,63 @@
+{
+  "title": "Baltasar",
+  "description": "Conseil en affaires publiques et communication stratégique",
+  "menu": {
+    "home": "Accueil",
+    "studies": "Nos études",
+    "team": "Notre Équipe",
+    "contact": "Contact",
+    "language": "EN",
+    "seemorestudies": "Voir plus d'études"
+  },
+  "approach": {
+    "title": "Approche",
+    "description": "Baltasar est un cabinet de conseil en affaires publiques et en communication stratégique fondé en 2023 par Alexis Abeille et Geoffroy Daignes. \n Nous avons une connaissance approfondie des secteurs de nos clients - santé, tech, industrie, commerce, formation professionnelle, transports, énergie — et mobilisons nos savoir-faire pour les aider à réaliser leurs ambitions. \n Nous proposons un accompagnement méthodique et précis : nous soutenons nos clients dans la construction de leur feuille de route stratégique, puis en pilotons l’exécution opérationnelle en produisant le bon contenu ou en assurant la bonne mise en relation. \n Nous savons jouer collectif et pour cela sommes entourés d’un réseau de partenaires de haut niveau — journalistes, chercheurs, avocats, designers, experts de l’e-influence — pour être en toute circonstance apporteurs de solutions. \n Nous accordons une importance particulière à l’écriture et à la clarification des enjeux techniques et messages complexes de nos clients, car c’est pour nous le cœur d’une prestation de conseil réussie."
+  },
+  "alexis": {
+    "name": "Alexis Abeille",
+    "description": "Alexis Abeille a près de 10 ans d’expérience dans l’accompagnement d’entreprises, fondations, fédérations et de dirigeants.\nPassé par des grands groupes de communication, il a également travaillé au sein de la direction de la Fondation Pierre Deniker, située au sein de l’hôpital Sainte-Anne à Paris, qui vise à soutenir la recherche en psychiatrie et sensibiliser le public aux troubles psychiques.\nEngagé pour l’information des jeunes aux enjeux de santé mentale, il est également un lecteur de romans et contribue ponctuellement avec Geoffroy Daignes (notamment pour la revue Le Débat) au débat public.\nIl est diplômé de Sciences Po Paris (2012) et de l’ESCP Europe (2015)."
+  },
+  "geoffroy": {
+    "name": "Geoffroy Daignes",
+    "description": "Geoffroy Daignes conseille des grandes entreprises, fédérations, start-ups, associations et leurs dirigeants depuis plus de 10 ans.\nIl a débuté sa carrière en développant pendant trois ans une start-up dans le secteur de l’éducation et de la formation professionnelle. Il a par la suite travaillé pour de grands groupes de communication (Publicis / Havas) et au sein de cabinets spécialisés en affaires publiques (Batout Guilbaud / Pergamon).\nAu cours de ce parcours, il s’est spécialisé dans les secteurs de la santé, du numérique, de l’éducation et de l’énergie.\nIl contribue au débat public par des publications dans des revues (Le Débat - Gallimard) et dans la presse (Le Monde, Le Figaro, Libération…)."
+  },
+  "services": {
+    "title": "Métiers",
+    "publicAffairs": "Conseil en affaires publiques",
+    "publicAffairsDescription": "Conseil en affaires publiques : nous aidons les entreprises à faire entendre leurs intérêts légitimes auprès des décideurs publics.",
+    "strategicRoadmap": "Feuille de route stratégique",
+    "technicalBriefs": "Argumentaires techniques et position paper",
+    "legislativeMonitoring": "Veille législative et réglementaire",
+    "meetingPreparation": "Préparation de rendez-vous",
+    "awarenessEvents": "Événements de sensibilisation",
+    "strategicCommunication": "Conseil en communication stratégique",
+    "strategicCommunicationDescription": "Conseil en communication : nous accompagnons les entreprises et décideurs dans la rédaction et la diffusion de leurs récits.",
+    "corporateCommunication": "Stratégie de communication corporate",
+    "leadershipInterventions": "Interventions dirigeants et thought leadership",
+    "crisisCommunication": "Communication de crise",
+    "internalCommunication": "Communication interne",
+    "pressMonitoring": "Veille presse et réseaux sociaux"
+  },
+  "progressBar": {
+    "home": "Accueil",
+    "approach": "Approche",
+    "services": "Métiers",
+    "team": "Equipe"
+  },
+  "ogTitle": "Baltasar",
+  "ogDescription": "Conseil en affaires publiques et communication stratégique",
+  "backToHome": "Retour à l'accueil",
+  "newsletter": {
+    "title": "Abonnez-vous à notre newsletter",
+    "subtitle": "Restez informé des dernières actualités.",
+    "placeholder": "Entrez votre email",
+    "button": {
+      "default": "S'abonner",
+      "submitting": "Envoi en cours..."
+    },
+    "success": {
+      "title": "Merci!",
+      "message": "Vous êtes abonné avec succès à notre newsletter."
+    }
+  }
+}

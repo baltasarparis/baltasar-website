@@ -1,8 +1,15 @@
-/** @type {import('next').NextConfig} */
-const nextConfig = {}
+const { i18n } = require('./next-i18next.config');
 
 module.exports = {
-    images: {
-      domains: ['matabeille.s3.eu-west-1.amazonaws.com'],
-    },
-  };
+  i18n,
+  webpack: (cfg) => {
+    cfg.module.rules.push(
+      {
+        test: /\.md$/,
+        loader: 'frontmatter-markdown-loader',
+        options: { mode: ['react-component'] }
+      }
+    )
+    return cfg
+  }
+};
