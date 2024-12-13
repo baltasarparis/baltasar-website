@@ -22,10 +22,13 @@ const Geoffroy = forwardRef((props, ref) => {
     return (
         <div className='w-[100%] mb-6' ref={ref} id="team">
             <div className="mx-auto grid grid-cols-1 md:grid-cols-2  gap-6 w-[100%]" ref={elementRef}>
-
-
-
-
+            <div
+                    className={`w-[100%]  inline md:hidden min-h-[40vh] md:min-h-[70vh] mb-6 md:mb-0 rounded-md bg-cover bg-center transition-transform duration-1000 ease-out`}
+                    style={{
+                        backgroundImage: `url('/assets/images/Geoffroy.jpg')`,
+                        backgroundPosition: '45% 20%',
+                    }}
+                ></div>
                 <div
                     className={`w-[100%] min-h-[calc(50vh-130px)] rounded-md bg-gray-100 flex flex-col p-6 md:p-12 relative transition-transform duration-1000 ease-out`}
                 >
@@ -38,7 +41,7 @@ const Geoffroy = forwardRef((props, ref) => {
                             </React.Fragment>
                         ))}
                     </div>
-
+          
                     {/* Icône LinkedIn */}
                     <div className="absolute top-4 right-4 flex items-center font-bold">
                         <a href="https://www.linkedin.com/in/geoffroy-daignes-a26b4b60/" target="_blank" rel="noopener noreferrer">
@@ -47,7 +50,7 @@ const Geoffroy = forwardRef((props, ref) => {
                     </div>
                 </div>
                 <div
-                    className={`w-[100%] min-h-[70vh] mb-6 md:mb-0 rounded-md bg-cover bg-center transition-transform duration-1000 ease-out`}
+                    className={`w-[100%] hidden md:inline md:min-h-[40vh] md:min-h-[70vh] mb-6 md:mb-0 rounded-md bg-cover bg-center transition-transform duration-1000 ease-out`}
                     style={{
                         backgroundImage: `url('/assets/images/Geoffroy.jpg')`,
                         backgroundPosition: '45% 20%',

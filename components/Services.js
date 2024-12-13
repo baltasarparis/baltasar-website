@@ -49,10 +49,10 @@ const Services = forwardRef((props, ref) => {
             <Title text={t('services.title')} />
             <div className="w-[80%] mx-auto">
 
-                <div className="flex space-x-2">
+                <div className="flex space-x-0 md:space-x-0 text-sm md:text-base">
                     <button
                         onClick={() => setActiveTab(0)}
-                        className={`px-4 py-2 rounded-full ${activeTab === 0
+                        className={`px-4 py-2 w-[130px] md:w-[230px] rounded-full ${activeTab === 0
                             ? "bg-baltacolor text-back"
                             : "bg-gray-100 text-gray-700 hover:bg-gray-200"
                             }`}
@@ -61,7 +61,7 @@ const Services = forwardRef((props, ref) => {
                     </button>
                     <button
                         onClick={() => setActiveTab(1)}
-                        className={`px-4 py-2 rounded-full ${activeTab === 1
+                        className={`px-4 py-2 w-[130px] md:w-[230px] rounded-full ${activeTab === 1
                             ? "bg-baltacolor text-back"
                             : "bg-gray-100 text-gray-700 hover:bg-gray-200"
                             }`}

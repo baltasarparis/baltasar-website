@@ -2,7 +2,7 @@ import { Tooltip } from "evergreen-ui";
 import { useEffect, useState } from "react";
 import { useTranslation } from 'react-i18next';
 
-const ProgressBar = ({ scroll, equipe, approche, service }) => {
+const ProgressBar = ({ scroll, equipe, approche, services }) => {
     const { t } = useTranslation('common');
     const [activeSection, setActiveSection] = useState("");
 
@@ -10,7 +10,7 @@ const ProgressBar = ({ scroll, equipe, approche, service }) => {
     const menu = [
         { key: 'accueil', label: t('progressBar.home'), offset: 0 },
         { key: 'approche', label: t('progressBar.approach'), offset: approche },
-        { key: 'services', label: t('progressBar.services'), offset: service },
+        { key: 'services', label: t('progressBar.services'), offset: services },
         { key: 'team', label: t('progressBar.team'), offset: equipe }
     ];
 

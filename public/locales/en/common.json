@@ -1,41 +1,42 @@
 {
   "title": "Baltasar",
-  "description": "Public affairs and strategic communication consulting",
+  "description": "Public Affairs and Strategic Communication Consulting",
   "menu": {
     "home": "Home",
-    "studies": "Our Services",
+    "studies": "Our Studies",
     "team": "Our Team",
     "contact": "Contact",
-    "language": "FR"
+    "language": "FR",
+    "seemorestudies": "See more studies"
   },
   "approach": {
     "title": "Approach",
-    "description": "Baltasar is a public affairs and strategic communication consulting firm founded in 2023 by Alexis Abeille and Geoffroy Daignes. \n We have in-depth knowledge of our clients' sectors — healthcare, tech, industry, commerce, professional training, transport, energy — and we apply our expertise to help them achieve their ambitions. \n We offer methodical and precise support: we assist our clients in building their strategic roadmap, and then we oversee its operational execution by producing the right content or ensuring the right connections are made. \n We know how to work collectively, and for that, we are surrounded by a network of high-level partners — journalists, researchers, lawyers, designers, e-influence experts — to always be solution providers. \n We place particular importance on writing and clarifying our clients' technical issues and complex messages, as this is, for us, the core of successful consulting."
+    "description": "Baltasar is a public affairs and strategic communication consulting firm founded in 2023 by Alexis Abeille and Geoffroy Daignes.\nWe have in-depth knowledge of our clients' industries — healthcare, tech, industry, commerce, vocational training, transportation, energy — and leverage our expertise to help them achieve their ambitions.\nWe offer methodical and precise support: we assist our clients in building their strategic roadmap and then oversee its operational execution by producing the right content or ensuring the proper connections are made.\nWe excel in teamwork and are surrounded by a network of high-level partners — journalists, researchers, lawyers, designers, e-influence experts — to consistently provide solutions.\nWe place particular importance on writing and clarifying our clients' technical challenges and complex messages, as we believe this is at the core of a successful consulting service."
   },
   "alexis": {
     "name": "Alexis Abeille",
-    "description": "Alexis Abeille has nearly 10 years of experience supporting companies, foundations, federations, and executives.\nHe has worked for major communication groups and also served as director at the Pierre Deniker Foundation, located at the Sainte-Anne Hospital in Paris, which aims to support psychiatric research and raise public awareness of mental health issues.\nCommitted to informing young people about mental health challenges, he is also an avid reader of novels and occasionally contributes with Geoffroy Daignes (notably for the journal Le Débat) to public debates.\nHe is a graduate of Sciences Po Paris (2012) and ESCP Europe (2015)."
+    "description": "Alexis Abeille has nearly 10 years of experience supporting companies, foundations, federations, and executives.\nHaving worked for major communication groups, he also served as part of the management team of the Pierre Deniker Foundation, located at Sainte-Anne Hospital in Paris, which supports psychiatric research and raises public awareness of mental health issues.\nCommitted to informing young people about mental health issues, he is also an avid reader of novels and occasionally contributes to public debates with Geoffroy Daignes (notably for the journal Le Débat).\nHe is a graduate of Sciences Po Paris (2012) and ESCP Europe (2015)."
   },
   "geoffroy": {
     "name": "Geoffroy Daignes",
-    "description": "Geoffroy Daignes advises large companies, federations, start-ups, associations, and their leaders for over 10 years.\nHe began his career by developing a start-up in the education and professional training sector for three years. He then worked for major communication groups (Publicis / Havas) and in public affairs consulting firms (Batout Guilbaud / Pergamon).\nThroughout this journey, he specialized in the healthcare, digital, education, and energy sectors.\nHe contributes to the public debate through publications in journals (Le Débat - Gallimard) and in the press (Le Monde, Le Figaro, Libération…)."
+    "description": "Geoffroy Daignes has been advising large companies, federations, startups, associations, and their leaders for over 10 years.\nHe began his career by developing a startup in the education and vocational training sector for three years. He then worked for major communication groups (Publicis / Havas) and in specialized public affairs firms (Batout Guilbaud / Pergamon).\nThroughout his career, he has specialized in the healthcare, digital, education, and energy sectors.\nHe contributes to public debates through publications in journals (Le Débat - Gallimard) and the press (Le Monde, Le Figaro, Libération…)."
   },
   "services": {
     "title": "Services",
     "publicAffairs": "Public Affairs Consulting",
-    "publicAffairsDescription": "Public affairs consulting: we help companies make their legitimate interests heard by public decision-makers.",
-    "strategicRoadmap": "Strategic roadmap",
-    "technicalBriefs": "Technical briefs and position papers",
-    "legislativeMonitoring": "Legislative and regulatory monitoring",
-    "meetingPreparation": "Meeting preparation",
-    "awarenessEvents": "Awareness events",
+    "publicAffairsDescription": "Public Affairs Consulting: we help companies make their legitimate interests heard by public decision-makers.",
+    "strategicRoadmap": "Strategic Roadmap",
+    "technicalBriefs": "Technical Briefs and Position Papers",
+    "legislativeMonitoring": "Legislative and Regulatory Monitoring",
+    "meetingPreparation": "Meeting Preparation",
+    "awarenessEvents": "Awareness Events",
     "strategicCommunication": "Strategic Communication Consulting",
-    "strategicCommunicationDescription": "Strategic communication consulting: we assist companies and decision-makers in crafting and disseminating their narratives.",
-    "corporateCommunication": "Corporate communication strategy",
-    "leadershipInterventions": "Leadership interventions and thought leadership",
-    "crisisCommunication": "Crisis communication",
-    "internalCommunication": "Internal communication",
-    "pressMonitoring": "Press and social media monitoring"
+    "strategicCommunicationDescription": "Communication Consulting: we assist companies and decision-makers in crafting and disseminating their narratives.",
+    "corporateCommunication": "Corporate Communication Strategy",
+    "leadershipInterventions": "Leadership Interventions and Thought Leadership",
+    "crisisCommunication": "Crisis Communication",
+    "internalCommunication": "Internal Communication",
+    "pressMonitoring": "Press and Social Media Monitoring"
   },
   "progressBar": {
     "home": "Home",
@@ -44,10 +45,10 @@
     "team": "Team"
   },
   "ogTitle": "Baltasar",
-  "ogDescription": "Public affairs and strategic communication consulting",
-  "backToHome": "Back to home",
+  "ogDescription": "Public Affairs and Strategic Communication Consulting",
+  "backToHome": "Back to Home",
   "newsletter": {
-    "title": "Subscribe to our Newsletter",
+    "title": "Subscribe to our newsletter",
     "subtitle": "Stay updated with the latest news.",
     "placeholder": "Enter your email",
     "button": {
@@ -56,7 +57,12 @@
     },
     "success": {
       "title": "Thank you!",
-      "message": "You've successfully subscribed to our newsletter."
+      "message": "You have successfully subscribed to our newsletter."
     }
-  }
+  },
+  "folder": "Folder",
+  "read": "8 minutes",
+  "founders": "Our Founders",
+  "seemorestudies": "See More Studies",
+  "seeteam": "Discover Our Team"
 }

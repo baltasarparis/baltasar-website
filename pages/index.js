@@ -43,15 +43,17 @@ export default function Home({ allArticlesData }) {
       setApprocheOffset(approchePosition.top + window.scrollY);
     }
 
+    if (alexisRef.current) {
+      const alexisPosition = alexisRef.current.getBoundingClientRect();
+      setAlexisOffset(alexisPosition.top + window.scrollY);
+    }
+
     if (servicesRef.current) {
       const servicesPosition = servicesRef.current.getBoundingClientRect();
       setServicesOffset(servicesPosition.top + window.scrollY);
     }
 
-    if (alexisRef.current) {
-      const alexisPosition = alexisRef.current.getBoundingClientRect();
-      setAlexisOffset(alexisPosition.top + window.scrollY);
-    }
+
   };
 
   // Mise à jour des offsets après le rendu
@@ -70,11 +72,11 @@ export default function Home({ allArticlesData }) {
   return (
     <div style={{ backgroundColor: background, transition: 'background-color 500ms' }}> {/* Ajoute la transition */}
       <Navigation scroll={scrollY} />
-      <ProgressBar scroll={scrollY} equipe={alexisOffset} approche={approcheOffset} service={servicesOffset} />
+      <ProgressBar scroll={scrollY} equipe={alexisOffset} approche={approcheOffset} services={servicesOffset} />
       <Hero allArticlesData={allArticlesData} />
       <Approche id="approche" ref={approcheRef} />
       <Services id="services" ref={servicesRef} />
-      <Team id="team"/>
+      <Team id="equipe" ref={alexisRef}/>
       <NewsletterSignup />
       <Footer />
     </div>

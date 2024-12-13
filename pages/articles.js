@@ -5,6 +5,8 @@ import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 import { getSortedArticlesData } from '../lib/articles';
 import { useRouter } from 'next/router';
 import ArticlesList from '../components/ArticlesList';
+import Link from 'next/link';
+import { useTranslation } from 'next-i18next';
 
 export default function Home({ allArticlesData }) {
   const [scrollY, setScrollY] = useState(0);
@@ -17,6 +19,7 @@ export default function Home({ allArticlesData }) {
   const alexisRef = useRef(null);
   const router = useRouter();
   const { locale } = router;
+  const { t } = useTranslation('common'); // Utilise le fichier de traduction "common"
 
   // Écoute du défilement de la page
   useEffect(() => {
@@ -60,12 +63,18 @@ export default function Home({ allArticlesData }) {
     };
   }, []);
 
- 
+
 
   return (
     <div style={{ backgroundColor: background, transition: 'background-color 500ms' }}> {/* Ajoute la transition */}
       <Navigation scroll={scrollY} />
-      <ArticlesList allArticlesData={allArticlesData} />      
+      <div className='md:w-[80%] mx-auto py-12'>
+        <Link href="/" className='ml-12'>← {t('backToHome')}</Link>
+      </div>
+      <ArticlesList allArticlesData={allArticlesData} />
+      <div className='md:w-[80%] mx-auto py-12'>
+        <Link href="/" className='ml-12'>← {t('backToHome')}</Link>
+      </div>
       <Footer />
     </div>
   );

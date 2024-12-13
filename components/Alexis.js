@@ -22,7 +22,7 @@ const Alexis = () => {
         <div className='w-[100%] mb-6'>
             <div className="mx-auto grid grid-cols-1 md:grid-cols-2  gap-6 w-[100%]">
                 <div
-                    className={`w-[100%] min-h-[70vh] mb-6 md:mb-0 rounded-md bg-cover bg-center transition-transform duration-1000 ease-out`}
+                    className={`w-[100%] min-h-[40vh] md:min-h-[70vh] mb-6 md:mb-0 rounded-md bg-cover bg-center transition-transform duration-1000 ease-out`}
                     style={{
                         backgroundImage: `url('/assets/images/alexis.jpg')`,
                         backgroundPosition: '45% 20%',

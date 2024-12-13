@@ -18,15 +18,15 @@ const BlogList = (props) => {
   }
 
   return (
-    <div className="  mx-12 my-12">
+    <div className="md:mx-12 my-1 md:my-6">
       <div className="mx-auto">
         {/* Titre des articles avec la clé i18n */}
-        <div className="flex justify-center my-12">
+        <div className="flex justify-center my-1 md:my-6">
           <Title text={t('menu.studies')} />
         </div>
-        <div className='my-12 pb-6' >
+        <div className='my-1 md:my-12 pb-6' >
           <Link href={"/articles/" + props.allArticlesData[0].id} className="w-full">
-            <div className="flex flex-col xl:flex-row bg-white rounded-lg overflow-hidden  my-12 hover:opacity-90  hover:shadow">
+            <div className="flex flex-col xl:flex-row bg-white rounded-lg overflow-hidden  my-3 md:my-12 hover:opacity-90  hover:shadow">
               {/* Left Section (Image) */}
               <div className="w-full">
                 <img
@@ -37,7 +37,7 @@ const BlogList = (props) => {
               </div>
 
               {/* Right Section (Content) */}
-              <div className="ml-12 px-12 py-12  rounded-xl">
+              <div className="md:ml-12 px-0  md:px-12 py-12  rounded-xl">
                 <div className="flex items-center text-gray-500 text-sm mb-3">
                   <span>{props.allArticlesData[0].date}</span>
 
@@ -49,9 +49,9 @@ const BlogList = (props) => {
                   {props.allArticlesData[0].preview}
                 </p>
                 <div className="flex items-center text-gray-500 text-sm">
-                  <span>Dossier</span>
+                  <span className="text-red-500 font-medium">{t('folder')}</span>
                   <span className="mx-2">•</span>
-                  <span>4 min read</span>
+                  <span>{t('read')}</span>
                 </div>
               </div>
             </div>
@@ -89,9 +89,9 @@ const BlogList = (props) => {
 
                     {/* Footer: Category and Reading Time */}
                     <div className="flex items-center text-sm text-gray-500">
-                      <span className="text-red-500 font-medium">Dossier</span>
+                      <span className="text-red-500 font-medium">{t('folder')}</span>
                       <span className="mx-2">•</span>
-                      <span>8 min read</span>
+                      <span>{t('read')}</span>
                     </div>
                   </div>
                 </div>
@@ -99,7 +99,7 @@ const BlogList = (props) => {
             ))}
           </ul>
         </div>
-        <div className="w-full flex justify-center">
+        <div className="w-full flex justify-center my-12">
           <CustomButton href="/articles" text={t('menu.seemorestudies')} />
         </div>
       </div>

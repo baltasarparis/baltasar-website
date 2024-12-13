@@ -32,7 +32,7 @@ const Navigation = () => {
   }
 
   return (
-    <nav className="w-screen h-[20vh]  md:h-[22vh] bg-white py-6">
+    <nav className="w-screen h-[17vh] md:h-[20vh]  md:h-[22vh] bg-white py-6">
       <div className="w-[90%] mx-auto flex items-start justify-between">
         <div className="flex flex-col">
           {/* Logo redirigeant vers la page d'accueil */}
@@ -94,11 +94,11 @@ const Navigation = () => {
 
       {/* Mobile Menu */}
       {isMenuOpen && (
-        <div className="z-50 lg:hidden bg-white absolute top-[9vh] left-0 w-full rounded-xl flex flex-col items-center space-y-4 py-4 mx-auto">
-          <a href="/" className="hover:text-gray-600">{t('menu.home')}</a>
-          <a href="/#services" className="hover:text-gray-600">{t('menu.studies')}</a>
-          <a href="/#team" className="hover:text-gray-600">{t('menu.team')}</a>
-          <a href="mailto:contact@baltasar.paris" className="hover:text-gray-600">{t('menu.contact')}</a>
+        <div className="z-50 lg:hidden bg-white absolute top-[70px] left-0 w-full rounded-xl flex flex-col items-center space-y-4 py-4 mx-auto">
+          <a href="/" className="hover:text-baltacolor">{t('menu.home')}</a>
+          <a href="/articles" className="hover:text-baltacolor">{t('menu.studies')}</a>
+          <a href="/equipe" className="hover:text-baltacolor">{t('menu.team')}</a>
+          <a href="mailto:contact@baltasar.paris" className="hover:text-baltacolor">{t('menu.contact')}</a>
         </div>
       )}
     </nav>

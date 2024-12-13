@@ -16,7 +16,7 @@ export default function Article({ articleData }) {
 
       <div className='w-[80%] mx-auto my-12'>
         <div className='my-12'>
-          <Link href="/" className='mx-6 py-12'>← {t('backToHome')}</Link>
+          <Link href="/" className='py-12'>← {t('backToHome')}</Link>
         </div>
         <Title text={articleData.title} />
         <p>{articleData.date}</p>
@@ -25,7 +25,7 @@ export default function Article({ articleData }) {
           <div dangerouslySetInnerHTML={{ __html: articleData.contentHtml }} />
         </div>
         <div className='my-12'>
-          <Link href="/" className='mx-6 py-12'>← {t('backToHome')}</Link>
+          <Link href="/" className='py-12'>← {t('backToHome')}</Link>
         </div>
       </div>
 

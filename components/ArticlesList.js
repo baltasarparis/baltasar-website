@@ -5,7 +5,17 @@ import React, { useCallback, useEffect, useState } from 'react';
 import Title from './Title';
 
 const ArticlesList = (props) => {
-
+    const { t } = useTranslation('common');
+    const [isMounted, setIsMounted] = useState(false); // To check if client is mounted
+  
+    useEffect(() => {
+      // Set the component as mounted to avoid mismatch between SSR and CSR
+      setIsMounted(true);
+    }, []);
+  
+    if (!isMounted) {
+      return null;
+    }
     return (
         <div className='w-[100] mb-6'>
             <div className="w-[80%] my-12 mx-auto my-12">
@@ -45,9 +55,9 @@ const ArticlesList = (props) => {
 
                                             {/* Footer: Category and Reading Time */}
                                             <div className="flex items-center text-sm text-gray-500">
-                                                <span className="text-red-500 font-medium">Dossier</span>
+                                                <span className="text-red-500 font-medium">{t('folder')}</span>
                                                 <span className="mx-2">•</span>
-                                                <span>8 min read</span>
+                                                <span>{t('read')}</span>
                                             </div>
                                         </div>
                                     </div>

@@ -11,7 +11,7 @@ const TeamMember = ({ name, description, image }) => {
       </div>
 
       <h3 className="text-xl font-semibold">{name}</h3>
-      <div className="p-12">
+      <div className="p-6 md:p-12">
         <p className="text-gray-600 text-sm mt-2">{description}</p>
       </div>
 
