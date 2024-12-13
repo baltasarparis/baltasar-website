@@ -1,5 +1,4 @@
 import React, { useEffect, useState, forwardRef } from 'react';
-
 import { useTranslation } from 'react-i18next';
 import Title from './Title';
 import CardGrid from './ServiceGrid';
@@ -11,7 +10,7 @@ const Services = forwardRef((props, ref) => {
     const [selectedIndex, setSelectedIndex] = useState(0);
     const [tabs] = useState([
         t('services.publicAffairs'),
-        t('services.strategicCommunication')
+        t('services.strategicCommunication'),
     ]);
     const [isMounted, setIsMounted] = useState(false);
     const [activeTab, setActiveTab] = useState(0);
@@ -42,52 +41,53 @@ const Services = forwardRef((props, ref) => {
 
     return (
         <div
-            className="w-screen mb-6 flex flex-col items-center "
+            className="w-screen mb-6 flex flex-col items-center"
             ref={ref}
             id="services"
         >
             <Title text={t('services.title')} />
             <div className="w-[80%] mx-auto">
-
                 <div className="flex space-x-0 md:space-x-0 text-sm md:text-base">
                     <button
                         onClick={() => setActiveTab(0)}
-                        className={`px-4 py-2 w-[130px] md:w-[230px] rounded-full ${activeTab === 0
-                            ? "bg-baltacolor text-back"
-                            : "bg-gray-100 text-gray-700 hover:bg-gray-200"
-                            }`}
+                        className={`px-4 py-2 w-[130px] md:w-[230px] rounded-full ${
+                            activeTab === 0
+                                ? 'bg-baltacolor text-back'
+                                : 'bg-gray-100 text-gray-700 hover:bg-gray-200'
+                        }`}
                     >
                         {t('services.publicAffairs')}
                     </button>
                     <button
                         onClick={() => setActiveTab(1)}
-                        className={`px-4 py-2 w-[130px] md:w-[230px] rounded-full ${activeTab === 1
-                            ? "bg-baltacolor text-back"
-                            : "bg-gray-100 text-gray-700 hover:bg-gray-200"
-                            }`}
+                        className={`px-4 py-2 w-[130px] md:w-[230px] rounded-full ${
+                            activeTab === 1
+                                ? 'bg-baltacolor text-back'
+                                : 'bg-gray-100 text-gray-700 hover:bg-gray-200'
+                        }`}
                     >
                         {t('services.strategicCommunication')}
                     </button>
                 </div>
 
                 <div className="p-4 w-[100%]">
-                    {activeTab === 0
-                        &&
+                    {activeTab === 0 && (
                         <div>
                             <CardGrid />
                         </div>
-                    }
-                    {activeTab === 1 &&
+                    )}
+                    {activeTab === 1 && (
                         <div>
                             <StrategicCommunication />
                         </div>
-                    }
+                    )}
                 </div>
             </div>
-
-
         </div>
     );
 });
+
+// Ajout du displayName pour résoudre l'erreur
+Services.displayName = 'Services';
 
 export default Services;

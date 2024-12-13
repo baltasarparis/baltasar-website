@@ -26,24 +26,32 @@ const Team = forwardRef((props, ref) => {
     }
 
     return (
-        <div className=" rounded-xl bg-gray-200 md:p-8 flex flex-col items-center w-[80%] mx-auto my-12"
-        ref={ref}
-        id="team"
->
-            <div className='my-6'>
+        <div
+            className="rounded-xl bg-gray-200 md:p-8 flex flex-col items-center w-[80%] mx-auto my-12"
+            ref={ref}
+            id="team"
+        >
+            <div className="my-6">
                 <Title text={t('founders')} />
             </div>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8 my-12">
                 {teamMembers.map((member, index) => (
-                    <TeamMember key={index} name={member.name} description={member.description} image={member.image} />
+                    <TeamMember
+                        key={index}
+                        name={member.name}
+                        description={member.description}
+                        image={member.image}
+                    />
                 ))}
             </div>
             <div className="my-12">
                 <CustomButton href="/equipe" text={t('seeteam')} />
             </div>
-
         </div>
     );
 });
+
+// Ajout du displayName pour résoudre l'erreur
+Team.displayName = 'Team';
 
 export default Team;

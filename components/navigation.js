@@ -79,10 +79,10 @@ const Navigation = () => {
 
         {/* Desktop Menu */}
         <div className="hidden lg:flex space-x-6 text-lg font-medium items-center pt-2 md:mt-6">
-          <a href="/" className="hover:text-baltacolor">{t('menu.home')}</a>
-          <a href="/articles" className="hover:text-baltacolor">{t('menu.studies')}</a>
-          <a href="/equipe" className="hover:text-baltacolor">{t('menu.team')}</a>
-          <a href="mailto:contact@baltasar.paris" className="hover:text-baltacolor">{t('menu.contact')}</a>
+          <Link href="/" className="hover:text-baltacolor">{t('menu.home')}</Link>
+          <Link href="/articles" className="hover:text-baltacolor">{t('menu.studies')}</Link>
+          <Link href="/equipe" className="hover:text-baltacolor">{t('menu.team')}</Link>
+          <Link href="mailto:contact@baltasar.paris" className="hover:text-baltacolor">{t('menu.contact')}</Link>
           <button
             className="hover:text-baltacolor text-lg font-medium"
             onClick={switchLanguage}
@@ -95,10 +95,10 @@ const Navigation = () => {
       {/* Mobile Menu */}
       {isMenuOpen && (
         <div className="z-50 lg:hidden bg-white absolute top-[70px] left-0 w-full rounded-xl flex flex-col items-center space-y-4 py-4 mx-auto">
-          <a href="/" className="hover:text-baltacolor">{t('menu.home')}</a>
-          <a href="/articles" className="hover:text-baltacolor">{t('menu.studies')}</a>
-          <a href="/equipe" className="hover:text-baltacolor">{t('menu.team')}</a>
-          <a href="mailto:contact@baltasar.paris" className="hover:text-baltacolor">{t('menu.contact')}</a>
+          <Link href="/" className="hover:text-baltacolor">{t('menu.home')}</Link>
+          <Link href="/articles" className="hover:text-baltacolor">{t('menu.studies')}</Link>
+          <Link href="/equipe" className="hover:text-baltacolor">{t('menu.team')}</Link>
+          <Link href="mailto:contact@baltasar.paris" className="hover:text-baltacolor">{t('menu.contact')}</Link>
         </div>
       )}
     </nav>

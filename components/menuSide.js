@@ -38,14 +38,14 @@ export default function MenuSide() {
                 className="navLogoImg"
             />
             <br />
-            <a href="/" className="hover:text-baltacolor">{t('menu.home')}</a>
-            <a href="/articles" className="hover:text-baltacolor">{t('menu.studies')}</a>
-            <a href="/equipe" className="hover:text-baltacolor">{t('menu.team')}</a>
-            <a href="mailto:contact@baltasar.paris" className="hover:text-baltacolor">{t('menu.contact')}</a>
-            {/* <a href="#">Nos Publications</a> */}
-            <a href="mailto:contact@baltasar.paris">
+            <Link href="/" className="hover:text-baltacolor">{t('menu.home')}</Link>
+            <Link href="/articles" className="hover:text-baltacolor">{t('menu.studies')}</Link>
+            <Link href="/equipe" className="hover:text-baltacolor">{t('menu.team')}</Link>
+            <Link href="mailto:contact@baltasar.paris" className="hover:text-baltacolor">{t('menu.contact')}</Link>
+            {/* <Link href="#">Nos Publications</Link> */}
+            <Link href="mailto:contact@baltasar.paris">
                 Contactez-nous
-            </a>
+            </Link>
             <br />
             <img
                 src="https://matabeille.s3.eu-west-1.amazonaws.com/156625439+(1)/Logo+Files/For+Web/png/fond+paris+gris+format+M.jpg"
