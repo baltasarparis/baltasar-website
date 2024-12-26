@@ -5,7 +5,7 @@ preview: >-
   que le Rassemblement national (RN), dont les votes ont été changeants, ne
   s’est vu attribuer aucun de ces postes clés, le bloc central et le bloc de
   gauche en sont sortis renforcés, au prix d’alliances parfois chèrement payées.
-title: Two Forms of Pre-rendering
+title: Two Forms of Pre-rendering Test
 date: 2020-01-01T00:00:00.000Z
 author: Alexis Abeille & Geoffroy Daignes
 excerpt: Lorem Ipsum
