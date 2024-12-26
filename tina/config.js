@@ -1,29 +1,12 @@
 import { defineConfig } from "tinacms";
 
-// Your hosting provider likely exposes this as an environment variable
-const branch =
-  process.env.GITHUB_BRANCH ||
-  process.env.VERCEL_GIT_COMMIT_REF ||
-  process.env.HEAD ||
-  "main";
-
-
-  console.log("Client ID:", process.env.NEXT_PUBLIC_TINA_CLIENT_ID);
-  console.log("Token:", process.env.TINA_TOKEN);
-  
 export default defineConfig({
-  branch,
-
-  // Get this from tina.io
-  clientId: process.env.NEXT_PUBLIC_TINA_CLIENT_ID,
-  // Get this from tina.io
-  token: process.env.TINA_TOKEN,
-
-
-
+  branch: "main", // La branche Git principale
+  clientId: process.env.NEXT_PUBLIC_TINA_CLIENT_ID, // ID client obtenu sur Tina Cloud
+  token: process.env.TINA_TOKEN, // Jeton d'accès obtenu sur Tina Cloud
   build: {
-    outputFolder: "admin",
-    publicFolder: "public",
+    outputFolder: "admin", // Répertoire pour l'interface TinaCMS
+    publicFolder: "public", // Répertoire public pour les médias
   },
   media: {
     tina: {
@@ -31,7 +14,6 @@ export default defineConfig({
       publicFolder: "public",
     },
   },
-  // See docs on content modeling for more info on how to setup new content models: https://tina.io/docs/schema/
   schema: {
     collections: [
       {
